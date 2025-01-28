@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import TopBar from "./TopBar";
+import { Icon } from "@iconify/react/dist/iconify.cjs";
 
 interface NavLink {
   name: string;
@@ -46,7 +47,7 @@ const Navbar: React.FC = () => {
     >
       <TopBar />
       <nav className="border-y border-gray-400">
-        <div className="container mx-auto flex items-center justify-between px-6 py-4">
+        <div className="container mx-auto flex items-center justify-between px-4 py-3">
           {/* Logo */}
           <div className="text-xl font-bold">
             <Link href="/">
@@ -54,16 +55,22 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
-              <Link key={link.name} href={link.href}>
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-blu hover:text-accent transition-all duration-200"
+              >
                 {link.name}
               </Link>
             ))}
           </div>
 
-          <div className="hidden md:block">
-            <Link href="/apply">Apply for Loan</Link>
+          <div className="hidden md:block border-2 border-blu py-2 px-6 rounded-md">
+            <Link href="/apply" className="flex items-center gap-3">
+              Apply for Loan <Icon icon="formkit:arrowright" />
+            </Link>
           </div>
         </div>
       </nav>

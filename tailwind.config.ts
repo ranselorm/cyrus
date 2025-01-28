@@ -9,7 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        blu: "#040720",
+        blu: "#134857",
+        "dark-blu": "#040720",
+        accent: "#EB88D2",
       },
       backgroundImage: {
         "hero-bg": `url('/images/hero-bg.png')`,
