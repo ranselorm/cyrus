@@ -5,7 +5,7 @@ import Partners from "./Partners";
 const Hero = () => {
   return (
     <section
-      className="hero-bg bg-cover bg-no-repeat h-auto bg-center py-12"
+      className="hero-bg bg-cover bg-no-repeat h-auto bg-center"
       style={{ backgroundImage: `url('/images/hero-bg.png')` }}
     >
       <UltimateSolution />

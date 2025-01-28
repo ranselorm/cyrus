@@ -1,10 +1,13 @@
+import ClientCentric from "@/components/ClientCentric";
 import Hero from "@/components/Hero";
-import Image from "next/image";
+import Impact from "@/components/Impact";
 
 export default function Home() {
   return (
-    <section>
+    <>
       <Hero />
-    </section>
+      <Impact />
+      <ClientCentric />
+    </>
   );
 }
