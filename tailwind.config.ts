@@ -9,8 +9,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        blu: "#040720",
+      },
+      backgroundImage: {
+        "hero-bg": `url('/images/hero-bg.png')`,
       },
     },
   },
