@@ -21,7 +21,7 @@ const FAQAccordion: React.FC = () => {
       </div>
 
       <div className="max-w-5xl mx-auto space-y-4">
-        {faqs.map((faq, index) => (
+        {faqs.slice(0, 3).map((faq, index) => (
           <FAQCard
             key={index}
             question={faq.question}
