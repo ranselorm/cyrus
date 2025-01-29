@@ -1,14 +1,18 @@
+import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/Faq";
-import HeroSection from "@/components/LoansHero";
-import React from "react";
 
 const LoansHero = () => {
   return (
     <section className="">
-      <HeroSection />
+      <HeroSection
+        title="Apply for free"
+        description="Choose your ideal plan. No obligation, cancel anytime."
+        leftIcon="/images/loan1.svg"
+        rightIcon="/images/loan2.svg"
+      />
       <CTASection />
-      \<FAQAccordion />
+      <FAQAccordion />
     </section>
   );
 };
