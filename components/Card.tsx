@@ -24,10 +24,10 @@ const Card: React.FC<CardProps> = ({ title, description, bgColor, icon }) => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <h3 className="text-2xl font-bold text-gray-900 flex items-center">
+      <h3 className="text-2xl font-bold text-blu flex items-center">
         {title} <span className="ml-2">{icon}</span>
       </h3>
-      <p className="mt-2 text-gray-800">{description}</p>
+      <p className="mt-3 text-blu text-lg">{description}</p>
     </motion.div>
   );
 };
