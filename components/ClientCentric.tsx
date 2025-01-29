@@ -31,7 +31,7 @@ const ClientCentric: React.FC = () => {
   return (
     <section className="py-16 px-6 text-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-2xl md:text-4xl font-bold">
           Our Client-<span className="text-accent">Centric</span> <br />
           Approach.
         </h2>
