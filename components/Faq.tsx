@@ -34,13 +34,13 @@ const FAQAccordion: React.FC = () => {
 
   return (
     <section className="py-16 px-6">
-      <div className="md:max-w-4xl mx-auto text-center mb-8">
+      <div className="container mx-auto text-center mb-8">
         <h2 className="text-3xl md:text-4xl font-bold md:max-w-xl mx-auto text-blu">
           Got questions? We've got you covered.
         </h2>
       </div>
 
-      <div className="max-w-3xl mx-auto space-y-4">
+      <div className="max-w-5xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className={`${faq.bgColor}  overflow-hidden`}>
             <button

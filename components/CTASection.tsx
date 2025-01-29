@@ -18,14 +18,14 @@ const containerVariants = {
 const CTASection: React.FC = () => {
   return (
     <motion.section
-      className="py-12 px-6"
+      className="py-12 bg-white"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
       <motion.div
-        className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8 text-center"
+        className="container mx-auto bg-white rounded-3xl px-4 py-8 text-center border border-gray-200"
         variants={containerVariants}
       >
         {/* Illustration */}
@@ -34,10 +34,10 @@ const CTASection: React.FC = () => {
           variants={containerVariants}
         >
           <Image
-            src="/images/question-check.svg"
-            alt="Question Icon"
-            width={80}
-            height={80}
+            src="/images/loan3.png"
+            alt="Loan Icon"
+            width={160}
+            height={160}
           />
         </motion.div>
 

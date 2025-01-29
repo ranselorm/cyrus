@@ -1,13 +1,14 @@
 import CTASection from "@/components/CTASection";
+import FAQAccordion from "@/components/Faq";
 import HeroSection from "@/components/LoansHero";
 import React from "react";
 
 const LoansHero = () => {
   return (
-    <section>
+    <section className="">
       <HeroSection />
       <CTASection />
-      <div></div>
+      \<FAQAccordion />
     </section>
   );
 };
