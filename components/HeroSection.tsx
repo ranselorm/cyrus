@@ -54,8 +54,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div></div>
           )}
 
-          {/* Hero Text */}
-          <div>
+          <div className="max-w-5xl w-full">
             <motion.h1
               className="text-4xl md:text-5xl font-bold text-blu"
               variants={heroVariants}
