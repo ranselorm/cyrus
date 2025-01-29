@@ -20,7 +20,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
 }) => {
   return (
     <div
-      className={`p-6 rounded-2xl shadow-md ${bgColor} max-w-sm flex flex-col space-y-4 h-[250px]`}
+      className={`p-6 rounded-2xl shadow-md ${bgColor} max-w-sm flex flex-col space-y-4 h-[250px] group hover:bg-blu transition-all duration-300 cursor-pointer`}
     >
       {/* User Profile */}
       <div className="flex items-center space-x-3">
@@ -30,12 +30,18 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
           className="w-12 h-12 rounded-full object-cover"
         />
         <div>
-          <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
-          <p className="text-sm text-gray-600">{role}</p>
+          <h3 className="text-lg font-semibold text-blu group-hover:text-second">
+            {name}
+          </h3>
+          <p className="text-sm text-gray-600 group-hover:text-second">
+            {role}
+          </p>
         </div>
       </div>
 
-      <p className="text-gray-800 flex-grow">{message}</p>
+      <p className="text-gray-800 flex-grow group-hover:text-white">
+        {message}
+      </p>
 
       <div className="flex space-x-3 mt-auto">
         <Icon

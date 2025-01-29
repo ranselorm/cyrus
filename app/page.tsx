@@ -1,6 +1,8 @@
+import BlogSection from "@/components/Blog";
 import ClientCentric from "@/components/ClientCentric";
 import Divider from "@/components/Divider";
 import Empowering from "@/components/Empowering";
+import FAQAccordion from "@/components/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
@@ -23,6 +25,8 @@ export default function Home() {
       <Empowering />
       <Features />
       <Testimonials />
+      <FAQAccordion />
+      <BlogSection />
     </>
   );
 }
