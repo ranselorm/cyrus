@@ -14,7 +14,7 @@ const Partners = () => {
   return (
     <section className="py-16 bg-primary/10">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold text-blu">Partners</h2>
+        {/* <h2 className="text-3xl font-bold text-blu">Partners</h2> */}
 
         {/* Marquee Scrolling Partner Logos */}
         <div className="mt-10 overflow-hidden">
