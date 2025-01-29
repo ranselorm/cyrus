@@ -56,7 +56,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
           <div className="max-w-5xl w-full">
             <motion.h1
-              className="text-4xl md:text-5xl font-bold text-blu"
+              className="text-4xl md:text-5xl font-bold text-blu max-w-xl mx-auto"
               variants={heroVariants}
             >
               {title}

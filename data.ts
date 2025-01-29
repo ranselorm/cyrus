@@ -56,3 +56,35 @@ export const faqs = [
     bgColor: "bg-pink-50",
   },
 ];
+
+export const blogs = [
+  {
+    title: "How Microcredit is Transforming Small Businesses",
+    image: "/images/blog1.jpg",
+    link: "/blog",
+    category: "Innovation",
+    date: "Feb 5, 2023",
+  },
+  {
+    title: "The Future of Microcredit Services",
+    image: "/images/blog2.avif",
+    link: "/blog",
+    category: "Tech",
+    date: "Jun 23, 2024",
+  },
+
+  {
+    title: "How to create an effective online impact with modern innovation.",
+    image: "/images/blog3.avif",
+    link: "/blog",
+    category: "Innovation",
+    date: "Feb 5, 2023",
+  },
+  {
+    title: "Financial Literacy: The Key to Smart Borrowing",
+    image: "/images/blog4.avif",
+    link: "/blog",
+    category: "Finance",
+    date: "April 29, 2024",
+  },
+];

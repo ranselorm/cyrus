@@ -2,24 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
+import BlogCard from "./BlogCard";
+import { blogs } from "@/data";
 
-// Blog Data
-const blogs = [
-  {
-    title: "How Microcredit is Transforming Small Businesses",
-    image: "/images/blog1.jpg",
-    link: "/blog",
-  },
-  {
-    title: "The Future of Microcredit Services",
-    image: "/images/blog2.avif",
-    link: "/blog",
-  },
-];
-
-// Animation Variants
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -39,38 +24,23 @@ const BlogSection: React.FC = () => {
       variants={containerVariants}
     >
       <div className="md:max-w-4xl mx-auto text-center mb-8">
-        <h2 className="text-2xl md:text-4xl font-bold md:max-w-xl mx-auto text-blu">
+        <h2 className="text-2xl md:text-4xl font-bold md:max-w-xl mx-auto text-blu md:mb-24">
           Highlighted articles and perspectives
         </h2>
       </div>
-      <div className="container px-4 mx-auto grid md:grid-cols-2 gap-8">
-        {blogs.map((blog, index) => (
-          <motion.div
-            key={index}
-            className="group"
-            variants={containerVariants}
-          >
-            <Link href={blog.link}>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-                className="h-[400px]"
-              >
-                <Image
-                  src={blog.image}
-                  alt={blog.title}
-                  width={600}
-                  height={400}
-                  className="rounded-xl shadow-md w-full h-full object-cover"
-                />
-              </motion.div>
-              <h3 className="mt-4 text-xl font-semibold text-blu group-hover:text-blue-600 transition">
-                {blog.title}
-              </h3>
-            </Link>
+      {/* <div className="container px-4 mx-auto grid md:grid-cols-2 gap-8">
+        {blogs.slice(0, 2).map((blog, index) => (
+          <motion.div key={index} variants={containerVariants}>
+            <BlogCard
+              title={blog.title}
+              image={blog.image}
+              link={blog.link}
+              category={blog.category}
+              date={blog.date}
+            />
           </motion.div>
         ))}
-      </div>
+      </div> */}
     </motion.section>
   );
 };
