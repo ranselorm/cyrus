@@ -12,6 +12,7 @@ export default {
         blu: "#134857",
         "dark-blu": "#040720",
         accent: "#EB88D2",
+        second: "#d0f1fc",
       },
       backgroundImage: {
         "hero-bg": `url('/images/hero-bg.png')`,
