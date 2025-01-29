@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import OurTeam from "@/components/OurTeam";
 import StatsSection from "@/components/Stats";
 import Welcome from "@/components/Welcome";
 import React from "react";
@@ -14,6 +15,7 @@ const AboutPage = () => {
       />
       <Welcome />
       <StatsSection />
+      <OurTeam />
     </section>
   );
 };
