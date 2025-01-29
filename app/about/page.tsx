@@ -1,5 +1,7 @@
+import Gallery from "@/components/Gallery";
 import HeroSection from "@/components/HeroSection";
 import OurTeam from "@/components/OurTeam";
+import Services from "@/components/Services";
 import StatsSection from "@/components/Stats";
 import Welcome from "@/components/Welcome";
 import React from "react";
@@ -16,6 +18,8 @@ const AboutPage = () => {
       <Welcome />
       <StatsSection />
       <OurTeam />
+      <Gallery />
+      <Services />
     </section>
   );
 };
