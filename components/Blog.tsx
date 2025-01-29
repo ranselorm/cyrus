@@ -32,13 +32,18 @@ const containerVariants = {
 const BlogSection: React.FC = () => {
   return (
     <motion.section
-      className="py-16 px-6"
+      className="py-16"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+      <div className="md:max-w-4xl mx-auto text-center mb-8">
+        <h2 className="text-2xl md:text-4xl font-bold md:max-w-xl mx-auto text-blu">
+          Highlighted articles and perspectives
+        </h2>
+      </div>
+      <div className="container px-4 mx-auto grid md:grid-cols-2 gap-8">
         {blogs.map((blog, index) => (
           <motion.div
             key={index}
@@ -49,16 +54,17 @@ const BlogSection: React.FC = () => {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
+                className="h-[400px]"
               >
                 <Image
                   src={blog.image}
                   alt={blog.title}
                   width={600}
                   height={400}
-                  className="rounded-xl shadow-md w-full object-cover"
+                  className="rounded-xl shadow-md w-full h-full object-cover"
                 />
               </motion.div>
-              <h3 className="mt-4 text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition">
+              <h3 className="mt-4 text-xl font-semibold text-blu group-hover:text-blue-600 transition">
                 {blog.title}
               </h3>
             </Link>
