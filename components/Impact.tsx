@@ -29,7 +29,7 @@ const Impact: React.FC = () => {
   return (
     <section className="bg-dark-blu text-white py-16 px-6">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between mb-12">
+        <div className="flex flex-col md:flex-row text-center md:text-left justify-between mb-12">
           <h2 className="text-4xl font-bold mb-4">Impact</h2>
           <p className="md:text-xl mb-12 md:max-w-lg w-full leading-loose">
             Join the community of businesses and individuals who trust us to

@@ -51,14 +51,14 @@ const Empowering: React.FC = () => {
             <br className="hidden md:flex" />
             Businesses
           </h3>
-          <p className="text-xl leading-loose text-gray-600">
+          <p className="md:text-xl leading-loose text-gray-600">
             As an MFI, CYRUS was formed with the purpose of providing social and
             financial solutions to the poor. To determine its vulnerability to
             credit risk, there is review of the policies and procedures at every
             stage in the lending process to determine whether they reduce
             delinquencies and loan losses to an acceptable level.
           </p>
-          <p className="mt-6 text-xl leading-loose text-gray-600">
+          <p className="mt-6 md:text-xl leading-loose text-gray-600">
             These policies and procedures include the loan eligibility criteria,
             the application review process and authorization levels, collateral
             or security requirements, as well as the “carrots and sticks” used

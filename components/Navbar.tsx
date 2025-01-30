@@ -30,13 +30,13 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  useEffect(() => {
-    if (menuOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-  }, [menuOpen]);
+  // useEffect(() => {
+  //   if (menuOpen) {
+  //     document.body.classList.add("overflow-hidden");
+  //   } else {
+  //     document.body.classList.remove("overflow-hidden");
+  //   }
+  // }, [menuOpen]);
 
   return (
     <header
@@ -46,18 +46,16 @@ const Navbar: React.FC = () => {
     >
       <TopBar />
       <nav className="border-y border-gray-400">
-        <div className="container mx-auto flex items-center justify-between px-4 py-3">
-          {/* Mobile Menu Button (Left) */}
+        <div className="container mx-auto flex items-center justify-between px-4 py-1">
           <div className="md:hidden">
             <button onClick={() => setMenuOpen(true)}>
               <Icon icon="mdi:menu" width={28} />
             </button>
           </div>
 
-          {/* Logo - Left on Desktop, Centered in Mobile Menu */}
           <div className="md:w-auto w-full flex justify-end md:justify-start">
             <Link href="/">
-              <img src="/images/logo.avif" alt="logo" className="w-20" />
+              <img src="/images/logo.avif" alt="logo" className="w-16" />
             </Link>
           </div>
 
