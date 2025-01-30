@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-// Animation Variants
 const containerVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {

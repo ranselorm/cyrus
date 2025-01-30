@@ -2,8 +2,8 @@ import { Icon } from "@iconify/react/dist/iconify.cjs";
 
 const TopBar = () => {
   return (
-    <div className="">
-      <div className="container mx-auto px-4 py-1 flex justify-between">
+    <div>
+      <div className="container mx-auto px-4 py-1 flex flex-col md:flex-row items-center justify-between">
         <p>hello!</p>
         <div className="flex gap-4">
           <p className="flex items-center gap-2 text-sm">

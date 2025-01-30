@@ -2,7 +2,7 @@ import React from "react";
 
 const UltimateSolution = () => {
   return (
-    <section className="w-[95%] mx-auto h-[500px] bg-white mt-16 rounded-3xl overflow-hidden">
+    <section className="w-[95%] mx-auto h-[500px] bg-white md:mt-16 mt-40 rounded-3xl overflow-hidden">
       <div className="container mx-auto h-full">
         <div className="flex md:flex-row flex-col-reverse w-full h-full">
           <div className="flex-1 md:w-1/2 flex justify-center flex-col px-8 gap-y-8 text-blu">
