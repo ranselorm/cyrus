@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
 
           {/* Apply Button - Desktop */}
           <div className="hidden md:block border-2 border-blu py-2 px-6 rounded-md">
-            <Link href="/apply" className="flex items-center gap-3">
+            <Link href="/loan" className="flex items-center gap-3">
               Apply for Loan <Icon icon="formkit:arrowright" />
             </Link>
           </div>
@@ -127,7 +127,7 @@ const Navbar: React.FC = () => {
               {/* Apply Button */}
               <div className="w-full px-6 mt-6">
                 <Link
-                  href="/apply"
+                  href="/loan"
                   className="block w-full text-center text-blu border-blu border py-3 rounded-lg transition hover:bg-white/10"
                   onClick={() => setMenuOpen(false)}
                 >
