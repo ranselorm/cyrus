@@ -72,7 +72,6 @@ const Navbar: React.FC = () => {
             ))}
           </div>
 
-          {/* Apply Button - Desktop */}
           <div className="hidden md:block border-2 border-blu py-2 px-6 rounded-md">
             <Link href="/loan" className="flex items-center gap-3">
               Apply for Loan <Icon icon="formkit:arrowright" />
@@ -80,7 +79,6 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Menu with Smooth Animations */}
         <AnimatePresence>
           {menuOpen && (
             <motion.div
@@ -91,7 +89,6 @@ const Navbar: React.FC = () => {
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="fixed inset-0 bg-white z-50 flex flex-col justify-start pt-20 items-center h-screen overflow-y-auto text-blu"
             >
-              {/* Close Button (X) - Left */}
               <button
                 onClick={() => setMenuOpen(false)}
                 className="absolute top-6 left-6 text-blu"
@@ -99,14 +96,12 @@ const Navbar: React.FC = () => {
                 <Icon icon="mdi:close" width={30} />
               </button>
 
-              {/* Centered Logo in Mobile Menu */}
               <img
                 src="/images/logo.avif"
                 alt="logo"
                 className="w-20 mx-auto mb-5"
               />
 
-              {/* Nav Links with White Dividers */}
               <div className="w-full max-w-sm px-4">
                 {navLinks.map((link, index) => (
                   <React.Fragment key={link.name}>
@@ -124,7 +119,6 @@ const Navbar: React.FC = () => {
                 ))}
               </div>
 
-              {/* Apply Button */}
               <div className="w-full px-6 mt-6">
                 <Link
                   href="/loan"

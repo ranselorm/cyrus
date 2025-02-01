@@ -20,8 +20,8 @@ const AboutPage = () => {
       />
       <Welcome />
       <StatsSection />
-      <OurTeam />
-      <Gallery />
+      {/* <OurTeam /> */}
+      {/* <Gallery /> */}
       <Services />
       <SettleLoan />
       <Partners />
